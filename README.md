@@ -23,3 +23,6 @@ The app also provides information on whether the user's BMI falls within a healt
 ### DISCLAIMER
 This app is for informational purposes only and is not intended to be a substitute for professional medical advice, diagnosis, or treatment. 
 Always seek the advice of a physician or other qualified healthcare provider with any questions you may have regarding a medical condition.
+
+### DOWNLOAD .apk FILE
+Link to download the compiled android application: https://www.mediafire.com/file/if1ji0wgrcaxqkx/BMI.Calculator.ver.1.0.build.1.apk/file
