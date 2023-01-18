@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/main_layout"
+        android:layout_width="0dp"
+        android:layout_height="830dp"
+        android:background="@drawable/main_header_selector1"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:text="Height:"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/heightText"
+                android:layout_width="218dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Centimeters"
+                android:inputType="numberDecimal"
+                android:textColor="#FBFBFB"
+                android:textColorHint="#E3DDDD"
+                android:translationX="-55dp"
+                android:translationY="40dp" />
+
+            <EditText
+                android:id="@+id/inches"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Inches"
+                android:inputType="numberDecimal"
+                android:textColor="#FBFBFB"
+                android:textColorHint="#E3DDDD"
+                android:translationX="-40dp"
+                android:translationY="40dp" />
+
+            <Switch
+                android:id="@+id/switchHeight"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:text="Feet and Inches"
+                android:textColor="#FFFFFF"
+                android:translationY="30dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:text="Weight:"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/weight"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Kilograms"
+                android:inputType="numberDecimal"
+                android:textColor="#C1C1C1"
+                android:textColorHint="#E3DDDD"
+                android:translationX="-140dp"
+                android:translationY="40dp" />
+
+            <Switch
+                android:id="@+id/switchWeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="Pounds"
+                android:textColor="#FFFFFF"
+                android:translationX="-10dp"
+                android:translationY="40dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:backgroundTint="#FFFFFF"
+            android:paddingLeft="10dp"
+            android:text="Calculate BMI"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:translationX="10dp"
+            app:background="@color/white" />
+
+        <nl.dionsegijn.konfetti.xml.KonfettiView
+            android:id="@+id/konfettiView"
+            android:layout_width="match_parent"
+            android:layout_height="830dp"
+            android:translationY="-260dp" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
